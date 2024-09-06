@@ -1,0 +1,257 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.esm.js"></script>
+    <script src="js/bootstrap.bundle.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header" >
+        <div class="container" id="black-head">
+            <div class="div1" id="changeicon">
+                <img src="images/course2-03.jpg" alt="">
+                <span>Dash</span>
+            </div>
+            <div class="div2 hide">
+                <h2 id="h2">Dashboard</h2>
+            <div class="date" id="dat">
+                <input type="date" id="date">
+                <span>
+                    <i class="fa-solid fa-xmark" id="dele"></i>
+                </span>
+            </div>
+            </div>
+            <div class="head-recent">
+                <div class="icons">
+                    <i class="fa-solid fa-sun" id="light"></i>
+                    <i class="fa-solid fa-moon" id="dark"></i>
+                </div>
+                <div class="welcome" id="wel">
+                    <div class="text">
+                    <p id="name">Hey,Toka</p>
+                    <span id="pos">admin</span>
+                    </div>
+                    <img src="images/avatar.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-page" id="main">
+        <div class="navbar1"  id="navbar">
+            
+            <div class="div2">
+                <a class="icon none">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                </a>
+                <a href="index.html">Dashboard</a>
+            </div>
+            <div class="div3">
+                <a class="icon none"><i class="fa-solid fa-ethernet"></i></a>
+                <a href="table.html">Recent orders</a>
+            </div>
+            <div class="div4">
+                <a class="icon none">
+                    <i class="fa-regular fa-square-check"></i>
+                </a>
+                <a>form</a>
+            </div>
+            <div class="div4">
+                <a class="icon none">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                </a>
+                <a>analytics</a>
+            </div>
+            <div class="div4">
+                <a class="icon none">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a>messages</a>
+            </div>
+            <div class="div4">
+                <a class="icon none">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </a>
+                <a>products</a>
+            </div>
+            <div class="div5">
+                <a class="icon none">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+                <a>log out</a>
+            </div>
+        </div>
+        <div class="dash">
+            
+            <div class="grid-divs">
+                <div class="div1">
+                    <i class="fa-solid fa-chart-column color1"></i>
+                    <div class="sale">
+                        <div class="text">
+                            <p>total sales</p>
+                            <span>$25,024</span>
+                        </div>
+                        <div class="prog" data-value="81">
+                            <span data-value="81">0%</span>
+                        </div>
+                    </div>
+                    <p>last 24 hours</p>
+                </div>
+                <div class="div1">
+                    <i class="fa-solid fa-chart-simple color2"></i>
+                    <div class="sale">
+                        <div class="text">
+                            <p>total expenses</p>
+                            <span>$14,160</span>
+                        </div>
+                        <div class="prog" data-value="62">
+                            <span data-value="62">0%</span>
+                        </div>
+                    </div>
+                    <p>last 24 hours</p>
+                </div>
+                <div class="div1">
+                    <i class="fa-solid fa-chart-pie color1"></i>
+                    <div class="sale">
+                        <div class="text">
+                            <p>total income</p>
+                            <span>$10,864</span>
+                        </div>
+                        <div class="prog" data-value="44">
+                            <span data-value="44">0%</span>
+                        </div>
+                    </div>
+                    <p>last 24 hours</p>
+                </div>
+                
+            </div>
+            <div class="recnt-order">
+                <h2 id="h22">Recent Order</h2>
+            <table id="table">
+                <tr class="head ">
+                    <td class="hide">product name</td>
+                    <td>product number</td>
+                    <td>payment</td>
+                    <td>statu</td>
+                    <td class="hide"> </td>
+                </tr>
+                <tr>
+                    <td class="hide">samsung a12 cover</td>
+                    <td>8392</td>
+                    <td>refunded</td>
+                    <td class="orange">declined</td>
+                    <td class="hide"><a href="">deatils</a></td>
+                </tr>
+                <tr>
+                    <td class="hide">samsung A15</td>
+                    <td>0073</td>
+                    <td>due</td>
+                    <td class="yellow">pending</td>
+                    <td class="hide"><a href="">deatils</a></td>
+                </tr>
+                <tr>
+                    <td class="hide">airpods pro 2</td>
+                    <td>4352</td>
+                    <td>due</td>
+                    <td class="yellow">pending</td>
+                    <td class="hide"><a href="">deatils</a></td>
+                </tr>
+                <tr>
+                    <td class="hide">mouse wireless</td>
+                    <td>0957</td>
+                    <td>paid</td>
+                    <td class="dark">delevired</td>
+                    <td class="hide"><a href="">deatils</a></td>
+                </tr>
+                <tr>
+                    <td class="hide">mouse wireless logitech</td>
+                    <td>8373</td>
+                    <td>paid</td>
+                    <td class="dark">delevired</td>
+                    <td class="hide"><a href="">deatils</a></td>
+                </tr>
+                <tr>
+                    <td class="hide">ram 16 ddr4</td>
+                    <td>1262</td>
+                    <td>paid</td>
+                    <td class="dark">delevired</td>
+                    <td class="hide"><a href="">deatils</a></td>
+                </tr>
+                
+                
+            </table>
+            </div>
+                <!-- <div class="show-a">
+                    <a href="table.html" class="show">show more</a>
+                </div> -->
+        </div>
+        <div class="recent">
+            <h2 class="h2-recent">recent updates</h2>
+            <div class="recent-info" id="recent">
+                
+                <div class="div1">
+                    <img src="images/team-01.png" alt="">
+                    <div class="text">
+                        <p><span>mike tyson</span> received his order of samsung a12 cover </p>
+                        <p>2 minutes ago</p>
+                    </div>
+                </div>
+                <div class="div1">
+                    <img src="images/team-02.png" alt="">
+                    <div class="text">
+                        <p><span>Gann saber</span> declined her order of samsung A15 </p>
+                        <p>5 minutes ago</p>
+                    </div>
+                </div>
+                <div class="div1">
+                    <img src="images/team-03.png" alt="">
+                    <div class="text">
+                        <p><span>Ali Hassan</span> received his order of airpods pro 2</p>
+                        <p>6 minutes ago</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="h2-recent h23">sales analytics</h2>
+            <div class="sales-anal" id="sales">
+                
+                <div class="div1">
+                    <i class="fa-solid fa-cart-shopping color1"></i>
+                <div class="text">
+                    <p>online orders</p>
+                    <p class="second">last 24 hours</p>
+                </div>
+                <span class="dark f">+38%</span>
+                <span>3849</span>
+                </div>
+                <div class="div1">
+                    <i class="fa-solid fa-bag-shopping color2"></i>
+                <div class="text">
+                    <p>ofline orders</p>
+                    <p class="second">last 24 hours</p>
+                </div>
+                <span class="orange f" id="red">-8%</span>
+                <span>1123</span>
+                </div>
+                <div class="div1">
+                    <i class="fa-solid fa-user color3"></i>
+                <div class="text">
+                    <p>new customers</p>
+                    <p class="second">last 24 hours</p>
+                </div>
+                <span class="dark f">+18%</span>
+                <span>3467</span>
+                </div>
+            </div>
+            
+                <button> <i class="fa-solid fa-plus"></i>Add new Product</button>
+            
+        </div>
+    </div>
+    <script src="main.js"> </script>
+</body>
